@@ -1,14 +1,30 @@
+import sys
 from wand.image import Image
 
-# Input image file path
-input_image = "ayoub.png"  # Replace with the path to your input image file
 
-# Read input image using MagickWand
-with Image(filename=input_image) as img:
-    # Convert image to XPM format
+argc = len(sys.argv)
+if (argc < 2):
+    print("Enter the image path after the command to_xpm example to_xpm ./image.png")
+    exit
+
+if (argc > 2):
+    print("Too may arguments")
+    exit
+
+
+img = sys.argv[1]
+
+output = ""
+
+for _ in img:
+    if _ == '.': break
+    output += _
+output += '.xpm'
+
+
+with Image(filename=img) as img:
     img.format = 'xpm'
     xpm_data = img.make_blob(format='xpm')
 
-# Write XPM data to output file
-with open('output.xpm', 'wb') as f:
+with open(output, 'wb') as f:
     f.write(xpm_data)
