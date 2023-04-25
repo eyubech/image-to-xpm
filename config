@@ -1,3 +1,0 @@
-python3 -m pip install Wand
-
-echo 'alias to_xpm="python3 ~/image-to-xpm/main.py"' >> ~/.zshrc
