@@ -6,10 +6,10 @@ argc = len(sys.argv)
 if (argc < 2):
     print("Please provide the path to the image file 'to_xpm' command.")
     print("For example: 'to_xpm ./image.png'")
-    exit
+    exit()
 if (argc > 2):
     print("Too many arguments")
-    exit
+    exit()
 
 img = sys.argv[1]
 output = ""
