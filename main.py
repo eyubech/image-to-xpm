@@ -11,7 +11,6 @@ if (argc > 2):
     print("Too many arguments")
     exit
 
-
 img = sys.argv[1]
 output = ""
 for _ in img:
