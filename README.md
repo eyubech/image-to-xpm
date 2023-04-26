@@ -21,5 +21,4 @@ now ur ready
 ```bash
   img2xpm path/to/image
 ```
-
-
+![image](https://user-images.githubusercontent.com/76597998/234435571-ee1707cf-a4fa-4956-be76-5c387e15184c.png)
