@@ -24,6 +24,7 @@ try:
         xpm_data = img.make_blob(format='xpm')
     with open(output, 'wb') as f:
         f.write(xpm_data)
+    print(f"{output} Created successfully")
 except:
     print("Please check the image path or the config file is executed.")
 
